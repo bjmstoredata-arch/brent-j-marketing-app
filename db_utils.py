@@ -1,10 +1,10 @@
 # db_utils.py
-
 import sqlite3
 import pandas as pd
 import os
 from security import sanitize_input
 
+# Use this path for compatibility with Streamlit Cloud
 DB_NAME = os.path.join(os.path.dirname(__file__), 'brent_j_marketing.db')
 
 def create_tables():
